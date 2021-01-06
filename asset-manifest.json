@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/perfect-experience-of-flex/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/perfect-experience-of-flex/static/js/main.58fec387.chunk.js",
-    "main.js.map": "/perfect-experience-of-flex/static/js/main.58fec387.chunk.js.map",
-    "runtime-main.js": "/perfect-experience-of-flex/static/js/runtime-main.ceb6e2d2.js",
-    "runtime-main.js.map": "/perfect-experience-of-flex/static/js/runtime-main.ceb6e2d2.js.map",
-    "static/js/2.239b6e70.chunk.js": "/perfect-experience-of-flex/static/js/2.239b6e70.chunk.js",
-    "static/js/2.239b6e70.chunk.js.map": "/perfect-experience-of-flex/static/js/2.239b6e70.chunk.js.map",
-    "static/js/3.33d06834.chunk.js": "/perfect-experience-of-flex/static/js/3.33d06834.chunk.js",
-    "static/js/3.33d06834.chunk.js.map": "/perfect-experience-of-flex/static/js/3.33d06834.chunk.js.map",
+    "main.js": "/perfect-experience-of-flex/static/js/main.bcc3a348.chunk.js",
+    "main.js.map": "/perfect-experience-of-flex/static/js/main.bcc3a348.chunk.js.map",
+    "runtime-main.js": "/perfect-experience-of-flex/static/js/runtime-main.4af4a907.js",
+    "runtime-main.js.map": "/perfect-experience-of-flex/static/js/runtime-main.4af4a907.js.map",
+    "static/js/2.7599c84a.chunk.js": "/perfect-experience-of-flex/static/js/2.7599c84a.chunk.js",
+    "static/js/2.7599c84a.chunk.js.map": "/perfect-experience-of-flex/static/js/2.7599c84a.chunk.js.map",
+    "static/js/3.63fb59fc.chunk.js": "/perfect-experience-of-flex/static/js/3.63fb59fc.chunk.js",
+    "static/js/3.63fb59fc.chunk.js.map": "/perfect-experience-of-flex/static/js/3.63fb59fc.chunk.js.map",
     "index.html": "/perfect-experience-of-flex/index.html",
     "static/css/main.8c8b27cf.chunk.css.map": "/perfect-experience-of-flex/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.239b6e70.chunk.js.LICENSE.txt": "/perfect-experience-of-flex/static/js/2.239b6e70.chunk.js.LICENSE.txt",
+    "static/js/2.7599c84a.chunk.js.LICENSE.txt": "/perfect-experience-of-flex/static/js/2.7599c84a.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/perfect-experience-of-flex/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ceb6e2d2.js",
-    "static/js/2.239b6e70.chunk.js",
+    "static/js/runtime-main.4af4a907.js",
+    "static/js/2.7599c84a.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.58fec387.chunk.js"
+    "static/js/main.bcc3a348.chunk.js"
   ]
 }
