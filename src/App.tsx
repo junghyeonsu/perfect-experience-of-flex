@@ -1,26 +1,17 @@
 import React from 'react';
-import './App.css';
+import styled from 'styled-components';
+import GlobalStyle from './styles/GlobalStyle';
 
-const name = [
-  {
-    name: 'hyeonsu',
-  },
-  {
-    name: 'jongong',
-  },
-  {
-    name: 'hi',
-  },
-];
+const Container = styled.div`
+  display: flex;
+`;
 
 function App() {
   return (
-    <div className="App" style={{ color: 'red' }}>
-      <p>hi</p>
-      {name.map((person) => (
-        <div key={person.name}>{person.name}</div>
-      ))}
-    </div>
+    <Container>
+      <GlobalStyle />
+      <button type="button">현슈</button>
+    </Container>
   );
 }
 export default App;
