@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './styles/GlobalStyle';
-
-const Container = styled.div`
-  display: flex;
-`;
+import MainPage from './pages/MainPage';
 
 function App() {
   return (
     <Container>
       <GlobalStyle />
-      <button type="button">현슈</button>
+      <MainPage />
     </Container>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  height: 100vh;
+`;
+
 export default App;

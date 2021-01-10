@@ -6,6 +6,10 @@ const GlobalStyle = createGlobalStyle`
     button,
     input {
         all: unset;
+    };
+
+    body {
+        background-color: #75d5d5;
     }
 `;
 
