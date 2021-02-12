@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import FlexContainer from 'components/FlexContainer';
+
 function MainPage() {
-  return <Container>메인페이지</Container>;
+  return (
+    <Container>
+      <FlexContainer />
+    </Container>
+  );
 }
 
 const Container = styled.div`
