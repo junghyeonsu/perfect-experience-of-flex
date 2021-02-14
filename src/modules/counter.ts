@@ -3,7 +3,12 @@
 const INCREASE = 'counter/INCREASE' as const;
 const DECREASE = 'counter/DECREASE' as const;
 const INCREASE_BY = 'counter/INCREASE_BY' as const;
+const CHANGE = 'counter/CHANGE' as const;
 
+export const change = (diff: string) => ({
+  type: CHANGE,
+  payload: diff,
+});
 export const increase = () => ({ type: INCREASE });
 export const decrease = () => ({ type: DECREASE });
 export const increaseBy = (diff: number) => ({
