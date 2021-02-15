@@ -1,3 +1,3 @@
-export { default } from 'modules/todos/reducer'; // reducer 를 불러와서 default로 내보내겠다는 의미
-export * from 'modules/todos/actions'; // 모든 액션 생성함수들을 불러와서 같은 이름들로 내보내겠다는 의미
-export * from 'modules/todos/types'; // 모든 타입들을 불러와서 같은 이름들로 내보내겠다는 의미
+export { default } from 'studied/modules/todos/reducer'; // reducer 를 불러와서 default로 내보내겠다는 의미
+export * from 'studied/modules/todos/actions'; // 모든 액션 생성함수들을 불러와서 같은 이름들로 내보내겠다는 의미
+export * from 'studied/modules/todos/types'; // 모든 타입들을 불러와서 같은 이름들로 내보내겠다는 의미

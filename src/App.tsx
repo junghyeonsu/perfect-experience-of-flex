@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import GlobalStyle from './styles/GlobalStyle';
-import MainPage from './pages/MainPage';
 
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './modules';
+
+import GlobalStyle from './styles/GlobalStyle';
+import MainPage from './pages/MainPage';
 
 const store = createStore(rootReducer);
 

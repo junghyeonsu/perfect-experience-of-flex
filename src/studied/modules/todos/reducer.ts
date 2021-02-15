@@ -1,5 +1,9 @@
-import { TodosState, TodosAction } from 'modules/todos/types';
-import { ADD_TODO, TOGGLE_TODO, REMOVE_TODO } from 'modules/todos/actions';
+import { TodosState, TodosAction } from 'studied/modules/todos/types';
+import {
+  ADD_TODO,
+  TOGGLE_TODO,
+  REMOVE_TODO,
+} from 'studied/modules/todos/actions';
 // 상태 초깃값 설정
 // 초기값은 빈 배열이어도 상관없음
 const initialState: TodosState = [

@@ -1,4 +1,4 @@
-import { addTodo, toggleTodo, removeTodo } from 'modules/todos/actions';
+import { addTodo, toggleTodo, removeTodo } from 'studied/modules/todos/actions';
 
 // 액션들의 타입스크립트 타입 준비
 export type TodosAction =

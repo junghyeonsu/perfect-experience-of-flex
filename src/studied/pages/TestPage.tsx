@@ -1,5 +1,5 @@
 import React from 'react';
-import TestChildPage from 'pages/TestChildPage';
+import TestChildPage from 'studied/pages/TestChildPage';
 
 function TestPage() {
   const onClickDiv = (e: any) => {
