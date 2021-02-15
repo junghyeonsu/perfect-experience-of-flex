@@ -2,15 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import GlobalStyle from './styles/GlobalStyle';
 import MainPage from './pages/MainPage';
-import TestPage from 'pages/TestPage';
+
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import rootReducer from './modules';
+
+const store = createStore(rootReducer);
 
 function App() {
   return (
-    <Container>
-      <GlobalStyle />
-      <MainPage />
-      {/* <TestPage /> */}
-    </Container>
+    <Provider store={store}>
+      <Container>
+        <GlobalStyle />
+        <MainPage />
+      </Container>
+    </Provider>
   );
 }
 

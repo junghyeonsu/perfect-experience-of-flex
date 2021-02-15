@@ -15,6 +15,7 @@ module.exports = {
     'import/prefer-default-export': 0,
     'prettier/prettier': 0,
     'import/extensions': 0,
+    'jsx-a11y/label-has-associated-control': 0,
     'no-use-before-define': 0,
     'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': 0, // 테스트 또는 개발환경을 구성하는 파일에서는 devDependency 사용을 허용
@@ -23,6 +24,7 @@ module.exports = {
     'jsx-a11y/no-static-element-interactions': 0,
     'jsx-a11y/click-events-have-key-events': 0,
     '@typescript-eslint/no-empty-function': 0,
+    'spaced-comment': 0,
     'react/jsx-filename-extension': [
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
