@@ -1,9 +1,14 @@
+// 리덕스 공부
 import { combineReducers } from 'redux';
-import justifyContent from 'modules/justifyContent';
+import counter from 'studied/modules/counter';
+import todos from 'studied/modules/todos';
+// import justifyContent from 'modules/justifyContent';
 
 // 하나일때는 굳이 만들어줄 필요없지만 나중에 리듀서가 많아질 가능성을 열어둔다.
 const rootReducer = combineReducers({
-  justifyContent,
+  counter,
+  todos,
+  // justifyContent,
 });
 
 export default rootReducer;
