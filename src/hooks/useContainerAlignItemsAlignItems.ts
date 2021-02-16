@@ -1,10 +1,12 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'modules';
 import { useCallback } from 'react';
-import { change } from 'modules/AlignItems';
+import { change } from 'modules/ContainerAlignItems';
 
 export default function useAlignItems(diff: string) {
-  const alignItems = useSelector((state: RootState) => state.AlignItems.style);
+  const ContainerAlignItems = useSelector(
+    (state: RootState) => state.ContainerAlignItems.style,
+  );
   const dispatch = useDispatch();
 
   const onChange = useCallback((diff) => dispatch(change(diff)), [
@@ -12,5 +14,5 @@ export default function useAlignItems(diff: string) {
     diff,
   ]);
 
-  return { alignItems, onChange };
+  return { ContainerAlignItems, onChange };
 }

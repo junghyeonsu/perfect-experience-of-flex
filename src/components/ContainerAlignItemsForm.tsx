@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import useAlignItems from 'hooks/useAlignItems';
+import useContainerAlignItems from 'hooks/useContainerAlignItemsAlignItems';
 
 function AlignItemsForm() {
   // 초기값을 넣음
-  const { onChange } = useAlignItems('normal');
+  const { onChange } = useContainerAlignItems('normal');
 
   const onChangeForm = (e: any) => {
     const str = String(e.target.value);
@@ -13,7 +13,7 @@ function AlignItemsForm() {
 
   return (
     <Container>
-      <h1>align-items</h1>
+      <h1>컨테이너 align-items</h1>
       <form onChange={onChangeForm}>
         <label>
           <input name="alignItems" type="radio" value="normal" defaultChecked />

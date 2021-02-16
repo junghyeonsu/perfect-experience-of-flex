@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'modules';
 import { useCallback } from 'react';
-import { change } from 'modules/JustifyContent';
+import { change } from 'modules/ContainerJustifyContent';
 
 export default function useJustifyContent(diff: string) {
-  const justifyContent = useSelector(
-    (state: RootState) => state.JustifyContent.style,
+  const ContainerJustifyContent = useSelector(
+    (state: RootState) => state.ContainerJustifyContent.style,
   );
   const dispatch = useDispatch();
 
@@ -14,5 +14,5 @@ export default function useJustifyContent(diff: string) {
     diff,
   ]);
 
-  return { justifyContent, onChange };
+  return { ContainerJustifyContent, onChange };
 }

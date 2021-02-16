@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import useJustifyContent from 'hooks/useJustifyContent';
+import useContainerJustifyContent from 'hooks/useContainerAlignItemsJustifyContent';
 
 function JustifyContentForm() {
   // 초기값을 넣음
-  const { onChange } = useJustifyContent('normal');
+  const { onChange } = useContainerJustifyContent('normal');
 
   const onChangeForm = (e: any) => {
     const str = String(e.target.value);
@@ -13,7 +13,7 @@ function JustifyContentForm() {
 
   return (
     <Container>
-      <h1>justify-content</h1>
+      <h1>컨테이너 justify-content</h1>
       <form onChange={onChangeForm}>
         <label>
           <input

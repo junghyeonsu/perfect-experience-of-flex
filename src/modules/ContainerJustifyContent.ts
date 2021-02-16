@@ -1,5 +1,5 @@
 // 액션 타입 생성
-const CHANGE = 'JustifyContent/CHANGE' as const;
+const CHANGE = 'ContainerJustifyContent/CHANGE' as const;
 
 // 액션 함수 생성
 export const change = (diff: string) => ({
@@ -21,7 +21,7 @@ const initialState: JustifyContentStates = {
 };
 
 // 리듀서 생성
-function JustifyContent(
+function ContainerJustifyContent(
   state: JustifyContentStates = initialState,
   action: JustifyContentActions,
 ): JustifyContentStates {
@@ -34,4 +34,4 @@ function JustifyContent(
   }
 }
 
-export default JustifyContent;
+export default ContainerJustifyContent;

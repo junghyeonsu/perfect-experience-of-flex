@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FlexContainer from 'components/FlexContainer';
-import JustifyContentForm from 'components/JustifyContentForm';
-import AlignItemsForm from 'components/AlignItemsForm';
+import ContainerJustifyContentForm from 'components/ContainerJustifyContentForm';
+import ContainerAlignItemsForm from 'components/ContainerAlignItemsForm';
 
 function MainPage() {
   return (
     <Container>
       <FlexContainer />
-      <JustifyContentForm />
-      <AlignItemsForm />
+      <ContainerJustifyContentForm />
+      <ContainerAlignItemsForm />
     </Container>
   );
 }

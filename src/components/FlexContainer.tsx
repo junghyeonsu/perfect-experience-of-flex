@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import FlexItem from 'components/FlexItem';
-import useJustifyContent from 'hooks/useJustifyContent';
-import useAlignItems from 'hooks/useAlignItems';
+import useContainerJustifyContent from 'hooks/useContainerAlignItemsJustifyContent';
+import useContainerAlignItems from 'hooks/useContainerAlignItemsAlignItems';
 
 type StyleProps = {
   justifyContent: string;
@@ -10,13 +10,16 @@ type StyleProps = {
 };
 
 function FlexContainer() {
-  const { justifyContent } = useJustifyContent('normal');
-  const { alignItems } = useAlignItems('normal');
+  const { ContainerJustifyContent } = useContainerJustifyContent('normal');
+  const { ContainerAlignItems } = useContainerAlignItems('normal');
 
   return (
     <>
       <p>컨테이너</p>
-      <Container justifyContent={justifyContent} alignItems={alignItems}>
+      <Container
+        justifyContent={ContainerJustifyContent}
+        alignItems={ContainerAlignItems}
+      >
         <FlexItem />
         <FlexItem />
         <FlexItem />

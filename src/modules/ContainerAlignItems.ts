@@ -1,5 +1,5 @@
 // 액션 타입 정의
-const CHANGE = 'AlignItems/CHANGE' as const;
+const CHANGE = 'ContainerAlignItems/CHANGE' as const;
 
 // 액션 함수 정의
 export const change = (diff: string) => ({
@@ -21,7 +21,7 @@ const initialState: AlignItemsStates = {
 };
 
 // 리듀서 정의
-function AlignItems(
+function ContainerAlignItems(
   state: AlignItemsStates = initialState,
   action: AlignItemsActions,
 ): AlignItemsStates {
@@ -34,4 +34,4 @@ function AlignItems(
   }
 }
 
-export default AlignItems;
+export default ContainerAlignItems;
