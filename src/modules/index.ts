@@ -2,11 +2,15 @@ import { combineReducers } from 'redux';
 
 import ContainerJustifyContent from 'modules/ContainerJustifyContent';
 import ContainerAlignItems from 'modules/ContainerAlignItems';
+import ItemBoxJustifyContent from 'modules/ItemBoxJustifyContent';
+import ItemBoxAlignItems from 'modules/ItemBoxAlignItems';
 
 // 하나일때는 굳이 만들어줄 필요없지만 나중에 리듀서가 많아질 가능성을 열어둔다.
 const rootReducer = combineReducers({
   ContainerJustifyContent,
   ContainerAlignItems,
+  ItemBoxJustifyContent,
+  ItemBoxAlignItems,
 });
 
 export default rootReducer;

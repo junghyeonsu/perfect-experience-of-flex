@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import FlexItem from 'components/FlexItem';
-import useContainerJustifyContent from 'hooks/useContainerAlignItemsJustifyContent';
-import useContainerAlignItems from 'hooks/useContainerAlignItemsAlignItems';
+
+import FlexItemBox from 'components/FlexItemBox';
+import useContainerJustifyContent from 'hooks/useContainerJustifyContent';
+import useContainerAlignItems from 'hooks/useContainerAlignItems';
 
 type StyleProps = {
   justifyContent: string;
@@ -20,10 +21,10 @@ function FlexContainer() {
         justifyContent={ContainerJustifyContent}
         alignItems={ContainerAlignItems}
       >
-        <FlexItem />
-        <FlexItem />
-        <FlexItem />
-        <FlexItem />
+        <FlexItemBox />
+        <FlexItemBox />
+        <FlexItemBox />
+        <FlexItemBox />
       </Container>
     </>
   );
@@ -31,6 +32,7 @@ function FlexContainer() {
 
 const Container = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: ${(props: StyleProps) => props.justifyContent};
   align-items: ${(props: StyleProps) => props.alignItems};
   border: 1px solid black;

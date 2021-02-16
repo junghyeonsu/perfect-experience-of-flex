@@ -9,8 +9,8 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
-  height: 10%;
+  width: 50px;
+  height: 30px;
   border: 1px solid black;
 `;
 

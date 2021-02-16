@@ -3,7 +3,7 @@ import { RootState } from 'modules';
 import { useCallback } from 'react';
 import { change } from 'modules/ContainerAlignItems';
 
-export default function useAlignItems(diff: string) {
+export default function useContainerAlignItems(diff: string) {
   const ContainerAlignItems = useSelector(
     (state: RootState) => state.ContainerAlignItems.style,
   );

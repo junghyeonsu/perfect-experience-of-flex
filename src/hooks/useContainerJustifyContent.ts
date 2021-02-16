@@ -3,7 +3,7 @@ import { RootState } from 'modules';
 import { useCallback } from 'react';
 import { change } from 'modules/ContainerJustifyContent';
 
-export default function useJustifyContent(diff: string) {
+export default function useContainerJustifyContent(diff: string) {
   const ContainerJustifyContent = useSelector(
     (state: RootState) => state.ContainerJustifyContent.style,
   );
