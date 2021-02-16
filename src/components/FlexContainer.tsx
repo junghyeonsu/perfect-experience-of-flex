@@ -15,37 +15,28 @@ function FlexContainer() {
   const { ContainerAlignItems } = useContainerAlignItems('normal');
 
   return (
-    <Container>
-      <p>컨테이너</p>
-      <ItemBoxContainer
-        justifyContent={ContainerJustifyContent}
-        alignItems={ContainerAlignItems}
-      >
-        <FlexItemBox />
-        <FlexItemBox />
-        <FlexItemBox />
-      </ItemBoxContainer>
-    </Container>
+    <ItemBoxContainer
+      justifyContent={ContainerJustifyContent}
+      alignItems={ContainerAlignItems}
+    >
+      <FlexItemBox />
+      <FlexItemBox />
+      <br />
+      <FlexItemBox />
+    </ItemBoxContainer>
   );
 }
 
+// FlexItemBox를 담는 컨테이너
 const ItemBoxContainer = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: ${(props: StyleProps) => props.justifyContent};
   align-items: ${(props: StyleProps) => props.alignItems};
   border: 1px solid black;
-  width: 100%;
-  height: 100%;
-`;
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   width: 80%;
-  height: 50%;
+  height: 60%;
+  padding: 5px;
 `;
 
 export default FlexContainer;

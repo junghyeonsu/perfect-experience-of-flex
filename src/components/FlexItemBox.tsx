@@ -13,29 +13,36 @@ type StyleProps = {
 function FlexItemBox() {
   const { ItemBoxJustifyContent } = useItemBoxJustifyContent('normal');
   const { ItemBoxAlignItems } = useItemBoxAlignItems('normal');
+
+  const onClickItemBox = (e: any) => {
+    console.log('아이템 박스에 클릭');
+  };
+
   return (
-    <>
-      <p>아이템 박스</p>
-      <Container
-        justifyContent={ItemBoxJustifyContent}
-        alignItems={ItemBoxAlignItems}
-      >
-        <FlexItem />
-        <FlexItem />
-        <FlexItem />
-        <FlexItem />
-      </Container>
-    </>
+    <ItemContainer
+      onClick={onClickItemBox}
+      justifyContent={ItemBoxJustifyContent}
+      alignItems={ItemBoxAlignItems}
+    >
+      <FlexItem />
+      <FlexItem />
+      <FlexItem />
+    </ItemContainer>
   );
 }
 
-const Container = styled.div`
+// item 들을 담을 박스
+const ItemContainer = styled.div`
   display: flex;
-  width: 100%;
+  width: 200px;
   height: 50px;
   border: 1px solid black;
   justify-content: ${(props: StyleProps) => props.justifyContent};
   align-items: ${(props: StyleProps) => props.alignItems};
+
+  &:hover {
+    border: 1px solid red;
+  }
 `;
 
 export default FlexItemBox;
