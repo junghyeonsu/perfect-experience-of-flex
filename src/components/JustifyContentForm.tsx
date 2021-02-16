@@ -13,7 +13,17 @@ function JustifyContentForm() {
 
   return (
     <Container>
+      <h1>justify-content</h1>
       <form onChange={onChangeForm}>
+        <label>
+          <input
+            name="justifyContent"
+            type="radio"
+            value="normal"
+            defaultChecked
+          />
+          normal
+        </label>
         <label>
           <input name="justifyContent" type="radio" value="center" />
           center

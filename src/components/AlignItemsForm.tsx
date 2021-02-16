@@ -13,17 +13,22 @@ function AlignItemsForm() {
 
   return (
     <Container>
+      <h1>align-items</h1>
       <form onChange={onChangeForm}>
         <label>
-          <input name="justifyContent" type="radio" value="center" />
+          <input name="alignItems" type="radio" value="normal" defaultChecked />
+          normal
+        </label>
+        <label>
+          <input name="alignItems" type="radio" value="center" />
           center
         </label>
         <label>
-          <input name="justifyContent" type="radio" value="start" />
+          <input name="alignItems" type="radio" value="start" />
           start
         </label>
         <label>
-          <input name="justifyContent" type="radio" value="space-evenly" />
+          <input name="alignItems" type="radio" value="space-evenly" />
           space-evenly
         </label>
       </form>
