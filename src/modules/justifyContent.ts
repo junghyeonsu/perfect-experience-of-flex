@@ -1,5 +1,5 @@
 // 액션 타입 생성
-const CHANGE = 'justifyContent/CHANGE' as const;
+const CHANGE = 'JustifyContent/CHANGE' as const;
 
 // 액션 함수 생성
 export const change = (diff: string) => ({
@@ -12,26 +12,26 @@ type JustifyContentActions = ReturnType<typeof change>;
 
 // 상태 타입스크립트 타입 생성
 type JustifyContentStates = {
-  justifyContent: string;
+  style: string;
 };
 
 // 초깃값 생성
 const initialState: JustifyContentStates = {
-  justifyContent: 'normal',
+  style: 'normal',
 };
 
 // 리듀서 생성
-function justifyContent(
+function JustifyContent(
   state: JustifyContentStates = initialState,
   action: JustifyContentActions,
 ): JustifyContentStates {
   switch (action.type) {
     case CHANGE:
-      return { justifyContent: action.payload };
+      return { style: action.payload };
 
     default:
       return state;
   }
 }
 
-export default justifyContent;
+export default JustifyContent;

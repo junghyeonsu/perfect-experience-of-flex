@@ -10,6 +10,7 @@ function TestPage() {
     <>
       <div>
         <TestChildPage onClickMethod={onClickDiv} />
+        <div style={{ color: 'red' }}>빨강쓰</div>
       </div>
     </>
   );

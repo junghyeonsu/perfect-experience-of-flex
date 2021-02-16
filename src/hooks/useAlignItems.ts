@@ -1,12 +1,10 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'modules';
 import { useCallback } from 'react';
-import { change } from 'modules/JustifyContent';
+import { change } from 'modules/AlignItems';
 
-export default function useJustifyContent(diff: string) {
-  const justifyContent = useSelector(
-    (state: RootState) => state.JustifyContent.style,
-  );
+export default function useAlignItems(diff: string) {
+  const alignItems = useSelector((state: RootState) => state.AlignItems.style);
   const dispatch = useDispatch();
 
   const onChange = useCallback((diff) => dispatch(change(diff)), [
@@ -14,5 +12,5 @@ export default function useJustifyContent(diff: string) {
     diff,
   ]);
 
-  return { justifyContent, onChange };
+  return { alignItems, onChange };
 }
