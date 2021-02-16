@@ -21,7 +21,6 @@ function FlexContainer() {
     >
       <FlexItemBox />
       <FlexItemBox />
-      <br />
       <FlexItemBox />
     </ItemBoxContainer>
   );
