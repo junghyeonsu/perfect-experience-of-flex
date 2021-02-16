@@ -1,26 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from 'react-responsive';
 
-import FlexContainer from 'components/FlexContainer';
-import ContainerJustifyContentForm from 'components/ContainerJustifyContentForm';
-import ContainerAlignItemsForm from 'components/ContainerAlignItemsForm';
-import ItemBoxJustifyContentForm from 'components/ItemBoxJustifyContentForm';
-import ItemBoxAlignItemsForm from 'components/ItemBoxAlignItemsForm';
+import MainLeftSide from 'pages/MainLeftSide';
+import MainRightSide from 'pages/MainRightSide';
 
 function MainPage() {
+  const isWide = useMediaQuery({
+    query: '(min-width:1024px)',
+  });
+
   return (
     <Container>
-      <FlexContainer />
-      <ContainerJustifyContentForm />
-      <ContainerAlignItemsForm />
-      <ItemBoxJustifyContentForm />
-      <ItemBoxAlignItemsForm />
+      <MainLeftSide />
+      {isWide ? <MainRightSide /> : ''}
     </Container>
   );
 }
 
 const Container = styled.div`
-  margin: auto;
+  display: flex;
+  height: 100vh;
 `;
 
 export default MainPage;

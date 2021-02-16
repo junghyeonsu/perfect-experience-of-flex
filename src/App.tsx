@@ -21,9 +21,6 @@ function App() {
   );
 }
 
-const Container = styled.div`
-  display: flex;
-  height: 100vh;
-`;
+const Container = styled.div``;
 
 export default App;
