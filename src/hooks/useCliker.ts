@@ -1,19 +1,19 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from 'modules';
 import { useCallback } from 'react';
-import { onHoverContainer, onHoverItemBox } from 'modules/Cliker';
+import { onClickContainer, onClickItemBox } from 'modules/Cliker';
 
-export default function useContainerAlignItems(diff: string) {
+export default function useCliker() {
   const ClikerStates = useSelector((state: RootState) => state.Cliker);
   const dispatch = useDispatch();
 
-  const HoverContainer = useCallback(() => dispatch(onHoverContainer()), [
+  const ClickContainer = useCallback(() => dispatch(onClickContainer()), [
     dispatch,
   ]);
 
-  const HoverItemBox = useCallback(() => dispatch(onHoverItemBox()), [
+  const ClickItemBox = useCallback(() => dispatch(onClickItemBox()), [
     dispatch,
   ]);
 
-  return { ClikerStates, HoverContainer, HoverItemBox };
+  return { ClikerStates, ClickContainer, ClickItemBox };
 }

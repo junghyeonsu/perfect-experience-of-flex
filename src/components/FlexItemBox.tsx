@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import FlexItem from 'components/FlexItem';
 import useItemBoxJustifyContent from 'hooks/useItemBoxJustifyContent';
 import useItemBoxAlignItems from 'hooks/useItemBoxAlignItems';
+import useCliker from 'hooks/useCliker';
 
 type StyleProps = {
   justifyContent: string;
@@ -13,14 +14,16 @@ type StyleProps = {
 function FlexItemBox() {
   const { ItemBoxJustifyContent } = useItemBoxJustifyContent('normal');
   const { ItemBoxAlignItems } = useItemBoxAlignItems('normal');
+  const { ClickItemBox, ClikerStates } = useCliker();
 
-  const onClickItemBox = (e: any) => {
-    console.log('아이템 박스에 클릭');
+  const onClickItemBox = () => {
+    console.log('아이템 박스 클릭');
+    ClickItemBox();
   };
 
   return (
     <ItemContainer
-      onClick={onClickItemBox}
+      onClickCapture={onClickItemBox}
       justifyContent={ItemBoxJustifyContent}
       alignItems={ItemBoxAlignItems}
     >
@@ -39,6 +42,8 @@ const ItemContainer = styled.div`
   border: 1px solid black;
   justify-content: ${(props: StyleProps) => props.justifyContent};
   align-items: ${(props: StyleProps) => props.alignItems};
+  position: relative;
+  z-index: 10;
 
   &:hover {
     border: 1px solid red;

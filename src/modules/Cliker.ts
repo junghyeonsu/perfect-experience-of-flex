@@ -1,17 +1,17 @@
-const HOVER_CONTAINER = 'Cliker/HOVER_CONTAINER' as const;
-const HOVER_ITEMBOX = 'Cliker/ITEMBOX' as const;
+const CLICK_CONTAINER = 'Cliker/CLICK_CONTAINER' as const;
+const CLICK_ITEMBOX = 'Cliker/CLICK_ITEMBOX' as const;
 
-export const onHoverContainer = () => ({
-  type: HOVER_CONTAINER,
+export const onClickContainer = () => ({
+  type: CLICK_CONTAINER,
 });
 
-export const onHoverItemBox = () => ({
-  type: HOVER_ITEMBOX,
+export const onClickItemBox = () => ({
+  type: CLICK_ITEMBOX,
 });
 
 type ClikerActions =
-  | ReturnType<typeof onHoverContainer>
-  | ReturnType<typeof onHoverItemBox>;
+  | ReturnType<typeof onClickContainer>
+  | ReturnType<typeof onClickItemBox>;
 
 type ClikerStates = {
   container: boolean;
@@ -28,10 +28,10 @@ function Cliker(
   action: ClikerActions,
 ): ClikerStates {
   switch (action.type) {
-    case HOVER_CONTAINER:
+    case CLICK_CONTAINER:
       return { container: true, itembox: false };
 
-    case HOVER_ITEMBOX:
+    case CLICK_ITEMBOX:
       return { container: false, itembox: true };
 
     default:
