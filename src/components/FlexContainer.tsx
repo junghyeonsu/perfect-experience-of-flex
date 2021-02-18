@@ -18,7 +18,6 @@ function FlexContainer() {
     <ItemBoxContainer
       justifyContent={ContainerJustifyContent}
       alignItems={ContainerAlignItems}
-      className="parent"
     >
       <FlexItemBox />
       <FlexItemBox />
@@ -39,12 +38,8 @@ const ItemBoxContainer = styled.div`
   padding: 5px;
 
   &:hover {
-    background-color: #f5f6f2;
     border: 1px solid red;
-
-    .child {
-      background-color: #e3e3e3;
-    }
+    cursor: pointer;
   }
 `;
 

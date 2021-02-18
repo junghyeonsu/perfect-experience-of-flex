@@ -23,7 +23,6 @@ function FlexItemBox() {
       onClick={onClickItemBox}
       justifyContent={ItemBoxJustifyContent}
       alignItems={ItemBoxAlignItems}
-      className="child"
     >
       <FlexItem />
       <FlexItem />
@@ -42,12 +41,8 @@ const ItemContainer = styled.div`
   align-items: ${(props: StyleProps) => props.alignItems};
 
   &:hover {
-    background-color: #f5f6f2;
     border: 1px solid red;
-
-    .parent {
-      background-color: #e3e3e3;
-    }
+    cursor: pointer;
   }
 `;
 
