@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     ${reset};
     button,
     body {
-        background-color: #75d5d5;
+        background-color: #e3e3e3;
     }
 `;
 

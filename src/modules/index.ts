@@ -4,6 +4,7 @@ import ContainerJustifyContent from 'modules/ContainerJustifyContent';
 import ContainerAlignItems from 'modules/ContainerAlignItems';
 import ItemBoxJustifyContent from 'modules/ItemBoxJustifyContent';
 import ItemBoxAlignItems from 'modules/ItemBoxAlignItems';
+import Cliker from 'modules/Cliker';
 
 // 하나일때는 굳이 만들어줄 필요없지만 나중에 리듀서가 많아질 가능성을 열어둔다.
 const rootReducer = combineReducers({
@@ -11,6 +12,7 @@ const rootReducer = combineReducers({
   ContainerAlignItems,
   ItemBoxJustifyContent,
   ItemBoxAlignItems,
+  Cliker,
 });
 
 export default rootReducer;
